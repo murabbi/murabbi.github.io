@@ -2,17 +2,98 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Murabbi Music ☀️ Official Site</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Murabbi Music | Official Site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;800&display=swap" rel="stylesheet"> 
+    <script src="https://cdn.tailwindcss.com"></script>
+ 
     <style>
-      body {
-        background: rgb(60,51,69);
-        background: radial-gradient(circle, rgba(60,51,69,1) 0%, rgba(11,7,32,1) 100%);
-      }
+        body {
+            font-family: 'Mulish', sans-serif;
+            background: #0d0e2e url('img/bg.jpg') no-repeat center center;
+            background-size: cover;
+            min-height: 100vh;
+            color: rgb(234, 215, 250);
+        }
+        .cover {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-width: 550px;
+
+        }
+        @-webkit-keyframes rotating /* Safari and Chrome */ {
+            from {
+                -webkit-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            to {
+                -webkit-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+            }
+            @keyframes rotating {
+            from {
+                -ms-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -webkit-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            to {
+                -ms-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -webkit-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+        .logo {
+            position: absolute;
+            top: 15px;
+            -webkit-animation: rotating 16s linear infinite;
+            -moz-animation: rotating 16s linear infinite;
+            -ms-animation: rotating 16s linear infinite;
+            -o-animation: rotating 16s linear infinite;
+            animation: rotating 16s linear infinite;
+        }
     </style>
 </head>
 <body>
-    
+    <section class="container mx-auto text-center mt-28 flex flex-col items-center justify-center">
+        <img src="img/logo.png" class="logo" width="200">
+        <img class="cover rounded shadow" src="img/voyager.jpg" alt="Murabbi Voyager">
+        <p class="mt-12 text-2xl sm:text-5xl mb-12 pb-2 tracking-tight font-bold text-gray-900 text-transparent bg-clip-text bg-gradient-to-tl from-indigo-500 via-purple-500 to-pink-500">Now available on all <br/>streaming platforms!</p>
+    </section>
+
+    <section class="container mx-auto text-center mt-6 flex flex-col items-center justify-center">
+        <p class="bg-white flex flex-row items-center rounded px-8 py-4 space-x-8">
+            <a href="https://open.spotify.com/album/1MVFsV5tU5yTK6eqseGWfB?si=UT1LrbSYQXyuEc0kRwWpDw">
+                <img src="img/spotify.svg" width="120" alt="Spotify">
+            </a>
+            <a href="https://music.apple.com/us/album/voyager/1629760855">
+                <img src="img/apple.png" width="120" alt="Apple Music">
+            </a>
+            <a href="https://music.youtube.com/playlist?list=OLAK5uy_kyeJGwz-Zv2VsAIBLJI-fdhj2wECYOKvs">
+                <img src="img/youtube.svg"  width="120" alt="">
+            </a>
+        </p>
+    </section>
+
+    <section class="container mx-auto text-center mt-12 flex items-center justify-center space-x-12">
+        <a class="flex" href="https://www.instagram.com/murabbi_music/">
+            <svg viewBox="0 0 24 24" class="mr-4 text-purple-500" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg> 
+            murabbi_music
+        </a>
+        <a class="flex" href="mailto:murabbimusic@gmail.com">
+            <svg viewBox="0 0 24 24" width="24" height="24" class="mr-4 text-purple-500" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            murabbimusic@gmail.com
+        </a>
+    </section>
 </body>
 </html>
